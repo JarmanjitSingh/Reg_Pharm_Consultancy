@@ -17,7 +17,7 @@ const style = {
   p: 4,
   borderRadius: "10px"
 };
-const ModalComp = ({ open, onOpen, onClose, children }: IModalCompProps) => {
+const ModalComp = ({ open, onClose, children }: IModalCompProps) => {
   return (
     <>
       <Modal
