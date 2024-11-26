@@ -6,9 +6,17 @@ import SecondSection from "@/sections/second-section";
 import SixthSection from "@/sections/sixth-section";
 import ThirdSection from "@/sections/third-section";
 import { Stack, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const isSmallScreen = window.innerWidth < 768;
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    setIsSmallScreen(window.innerWidth < 768);
+  }, []);
+  if (isSmallScreen) {
+    return <></>;
+  }
 
   if (isSmallScreen) {
     return (

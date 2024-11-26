@@ -20,11 +20,15 @@ import {
 import { ImFacebook2 } from "react-icons/im";
 import { IoMail } from "react-icons/io5";
 import logo from "/public/regLogo.jpeg";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
   const theme = useTheme();
-  const isSmallScreen = window.innerWidth < 768;
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+  useEffect(() => {
+    setIsSmallScreen(window.innerWidth < 768);
+  }, []);
   if (isSmallScreen) {
     return <></>;
   }

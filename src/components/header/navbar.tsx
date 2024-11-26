@@ -11,6 +11,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollPosition, setLastScrollPosition] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const handleOpen = () => {
     // setIsModalOpen(true);
@@ -20,7 +21,9 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
 
-  const isSmallScreen = window.innerWidth < 768;
+  useEffect(() => {
+    setIsSmallScreen(window.innerWidth < 768);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
