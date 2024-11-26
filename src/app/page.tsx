@@ -14,9 +14,6 @@ export default function Home() {
   useEffect(() => {
     setIsSmallScreen(window.innerWidth < 768);
   }, []);
-  if (isSmallScreen) {
-    return <></>;
-  }
 
   if (isSmallScreen) {
     return (
