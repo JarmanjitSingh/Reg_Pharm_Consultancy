@@ -4,6 +4,7 @@ import theme from "@/theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "A Regpharm Consultancy | Regulatory Solutions Experts",
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
+          <SpeedInsights />
           <Navbar />
           {children}
           <Footer />
