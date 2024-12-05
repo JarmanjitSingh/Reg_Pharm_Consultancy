@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import yogita from "/public/yogita.jpg";
+import yogita from "/public/yogitaa2.jpeg";
 
 const AboutPage = () => {
   return (
@@ -71,7 +71,7 @@ const AboutPage = () => {
                 src={yogita}
                 alt="banner2"
                 layout="fill"
-                objectFit="cover"
+                objectFit="contain"
                 objectPosition="top"
               />
             </Box>

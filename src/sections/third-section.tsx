@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaBacteria, FaClipboardList, FaStethoscope } from "react-icons/fa6";
-import { GiMedicines } from "react-icons/gi";
+import { GiMagnifyingGlass, GiMedicines } from "react-icons/gi";
 import { GrServices } from "react-icons/gr";
 import { HiBeaker } from "react-icons/hi";
 import { IoBookSharp } from "react-icons/io5";
@@ -28,10 +28,8 @@ const services = [
     icon: <HiBeaker size={80} />,
     title: "Quality Control",
     description: `Expertise in Analytical Support in Quality Control documentation 
-    (Stability Data : Long Term , Accelerated (Protocol /Report Raw data & Chromatograms 
-    support) In-use stability Protocol /Report Raw data & Chromatograms support) Analytical 
-    Method Validation (HPLC/ UV Spectra/Titration and other Analytical methods ) with Raw data 
-    & Chromatograms support Comparative Dissolution Profile with Raw data & Chromatograms support`,
+    (Stability Data : Long Term , Accelerated (Protocol / Report) In-use stability Protocol /Report) Analytical 
+    Method Validation (HPLC/ UV Spectra/Titration and other Analytical methods ) Comparative Dissolution Profile`,
   },
   {
     icon: <FaBacteria size={80} />,
@@ -54,7 +52,7 @@ const services = [
       "WHO Filling",
       "Training programs",
       "Site Master File",
-      "Process Validation Protocol / Report (Raw data & Chromatograms support)",
+      "Process Validation Protocol / Report",
       "Master Formula Record (MFR)",
       "Batch Manufacturing Record (BMR)",
       "COPP Application",
@@ -65,7 +63,7 @@ const services = [
   {
     icon: <IoBookSharp size={80} />,
     title: "Formulation & Development with tech Transfer",
-    description: `New Product Development data generation including Product Development Report (PDR) with full documentation support as per PICs/EU/ANVISA & WHO Standards Method Development Report (MDR) - Drug Excipient report & protocol, Comprehensive support for force degradation protocols and reports, with raw data. Tech transfer Services`,
+    description: `New Product Development data generation including Product Development Report (PDR) with full documentation support as per PICs/EU/ANVISA & WHO Standards Method Development Report (MDR) - Drug Excipient report & protocol, Comprehensive support for force degradation protocols and reports. Tech transfer Services`,
   },
   {
     icon: <FaStethoscope size={80} />,
@@ -88,7 +86,17 @@ const services = [
       "Export Tender Filling",
       "Govt Tender Filling: Haffkine, Rmscl, Upmscl , Gmsd, Janaushadhi tenders",
     ],
-  }
+  },
+  {
+    icon: <GiMagnifyingGlass size={80} />,
+    title: "Audit Support",
+    description: ``,
+    list: [
+      "Plant upgradation & Assessment as per EU",
+      "ANVISA",
+      "MHRA & WHO-GMP Standard",
+    ],
+  },
 ];
 
 const ThirdSection = () => {
@@ -147,32 +155,32 @@ const ThirdSection = () => {
           </Grid>
         ))}
 
-        <Grid
-          size={{ xs: 2, md: 4 }}
-          border={"1px solid"}
-          borderColor={theme.palette.primary.dark}
-          borderRadius={"10px"}
-        >
-          <Stack
-            direction="column"
-            alignItems="start"
-            justifyContent="center"
-            padding="3rem 2rem"
-            gap={4}
+        {/* <Grid
+            size={{ xs: 2, md: 4 }}
+            border={"1px solid"}
+            borderColor={theme.palette.primary.dark}
+            borderRadius={"10px"}
           >
-            <FaClipboardList size={80} color={theme.palette.primary.dark} />
-            <Typography variant="h3">Tenders</Typography>
-            <Typography variant="h6" color="black">
-              <ul>
-                <li>Export Tender Filling</li>
-                <li>
-                  Govt Tender Filling: Haffkine, Rmscl, Upmscl , Gmsd,
-                  Janaushadhi tenders
-                </li>
-              </ul>
-            </Typography>
-          </Stack>
-        </Grid>
+            <Stack
+              direction="column"
+              alignItems="start"
+              justifyContent="center"
+              padding="3rem 2rem"
+              gap={4}
+            >
+              <FaClipboardList size={80} color={theme.palette.primary.dark} />
+              <Typography variant="h3">Tenders</Typography>
+              <Typography variant="h6" color="black">
+                <ul>
+                  <li>Export Tender Filling</li>
+                  <li>
+                    Govt Tender Filling: Haffkine, Rmscl, Upmscl , Gmsd,
+                    Janaushadhi tenders
+                  </li>
+                </ul>
+              </Typography>
+            </Stack>
+          </Grid> */}
 
         <Grid
           size={{ xs: 2, md: 4 }}

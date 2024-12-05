@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     "A Regpharm Consultancy: 10+ years of expertise in regulatory consultancy for the pharmaceutical industry. Services include dossier preparation, QC documentation, BA-BE studies, and more.",
   keywords: [
     "Regpharm Consultancy",
+    "Regpharm",
+    "Reg pharm",
+    "Reg pharm consultancy",
     "Regulatory Solutions",
     "Pharmaceutical Consultancy",
     "Dossier Preparation",
