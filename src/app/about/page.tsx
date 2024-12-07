@@ -15,11 +15,11 @@ const AboutPage = () => {
       maxWidth="xl"
       sx={{ minHeight: "50vh", mt: "10rem", pt: "2rem", pb: "10rem" }}
     >
-      <Stack direction="row" height="100%">
+      <Stack direction={{ xs: "column", sm: "row" }} height="100%">
         <Stack
           direction="column"
           //   border="1px solid blue"
-          width="60%"
+          width={{ xs: "100%", sm: "60%" }}
           p={"2rem 2rem"}
         >
           <Typography variant="h1" fontSize="2rem" color="orange">
@@ -47,7 +47,7 @@ const AboutPage = () => {
           direction="column"
           justifyContent="center"
           //   border="1px solid blue"
-          width="40%"
+          width={{ xs: "100%", sm: "40%" }}
         >
           <Stack
             // border="4px solid violet"
@@ -88,9 +88,9 @@ const AboutPage = () => {
                   "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,4,70,1) 14%, rgba(5,19,84,1) 20%, rgba(0,212,255,1) 100%)",
               }}
             >
-              <Typography variant="h4" color="white">
+              {/* <Typography variant="h4" color="white">
                 CEO
-              </Typography>
+              </Typography> */}
               <Typography
                 variant="h1"
                 fontSize="1.5rem"
@@ -107,9 +107,9 @@ const AboutPage = () => {
         </Stack>
       </Stack>
 
-      <Grid container mt={8} spacing={12}>
+      <Grid container mt={8} spacing={{xs: 4, sm: 12}}>
         <Grid
-          size={{ xs: 2, md: 3 }}
+          size={{ xs: 12, sm: 6, md: 3 }}
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -125,7 +125,7 @@ const AboutPage = () => {
           <Typography>Years of Experience</Typography>
         </Grid>
         <Grid
-          size={{ xs: 2, md: 3 }}
+          size={{ xs: 12, sm: 6, md: 3 }}
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -141,7 +141,7 @@ const AboutPage = () => {
           <Typography>Project Challenge</Typography>
         </Grid>
         <Grid
-          size={{ xs: 2, md: 3 }}
+          size={{ xs: 12, sm: 6, md: 3 }}
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -157,7 +157,7 @@ const AboutPage = () => {
           <Typography>Positive Reviews</Typography>
         </Grid>
         <Grid
-          size={{ xs: 2, md: 3 }}
+          size={{ xs: 12, sm: 6, md: 3 }}
           display="flex"
           flexDirection="column"
           alignItems="center"

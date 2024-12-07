@@ -67,7 +67,7 @@ const services = [
   },
   {
     icon: <FaStethoscope size={80} />,
-    title: "Clinical /Non – Clinical/Pharmacovigilance Services",
+    title: "Clinical /Non – Clinical/ Pharmacovigilance Services",
     description: ``,
     list: [
       "BA/BE studies",
@@ -102,7 +102,7 @@ const services = [
 const ThirdSection = () => {
   const theme = useTheme();
   return (
-    <Container id="services" maxWidth="xl" sx={{ padding: "4rem 0" }}>
+    <Container id="services" maxWidth="xl" sx={{ padding: {xs: "4rem 2rem", sm: "4rem 0"} }}>
       <Stack direction="column" alignContent="center" alignItems="center">
         <Typography variant="h1">
           Our Services
@@ -118,14 +118,13 @@ const ThirdSection = () => {
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
+        columns={{ xs: 4, sm: 4, md: 12 }}
         mt={6}
-        // border={"1px solid blue"}
       >
         {services.map((service, index) => (
           <Grid
             key={index}
-            size={{ xs: 2, md: 4 }}
+            size={{ xs: 12, md: 4 }}
             border={"1px solid"}
             borderColor={theme.palette.primary.dark}
             borderRadius={"10px"}
@@ -155,35 +154,8 @@ const ThirdSection = () => {
           </Grid>
         ))}
 
-        {/* <Grid
-            size={{ xs: 2, md: 4 }}
-            border={"1px solid"}
-            borderColor={theme.palette.primary.dark}
-            borderRadius={"10px"}
-          >
-            <Stack
-              direction="column"
-              alignItems="start"
-              justifyContent="center"
-              padding="3rem 2rem"
-              gap={4}
-            >
-              <FaClipboardList size={80} color={theme.palette.primary.dark} />
-              <Typography variant="h3">Tenders</Typography>
-              <Typography variant="h6" color="black">
-                <ul>
-                  <li>Export Tender Filling</li>
-                  <li>
-                    Govt Tender Filling: Haffkine, Rmscl, Upmscl , Gmsd,
-                    Janaushadhi tenders
-                  </li>
-                </ul>
-              </Typography>
-            </Stack>
-          </Grid> */}
-
         <Grid
-          size={{ xs: 2, md: 4 }}
+          size={{ xs: 12, md: 4 }}
           border={"1px solid"}
           borderColor={theme.palette.primary.dark}
           borderRadius={"10px"}

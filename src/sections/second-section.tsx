@@ -91,24 +91,37 @@ const SecondSection = () => {
   const theme = useTheme();
   return (
     <Box bgcolor="#F5F5F5">
-      <Container maxWidth="xl" sx={{ padding: "4rem 0" }}>
+      <Container
+        maxWidth="xl"
+        sx={{ padding: { xs: "4rem 2rem", sm: "4rem 0" } }}
+      >
         <Stack direction="column" alignContent="center" alignItems="center">
-          <Typography variant="h1">
+          <Typography variant="h1" align="center">
             Global Experience and Expertise{" "}
             <FaGlobe size={30} color={theme.palette.primary.dark} />
           </Typography>
-          <Typography>
+          <Typography align="center" mt={{ xs: 2, sm: 0 }}>
             We have submitted dossiers to various countries across regions like
             SEA, LATAM, Middle East, CIS, Africa, and Europe.
           </Typography>
         </Stack>
 
-        <Grid container mt={6}>
-          <Grid size={{ xs: 6, md: 2 }}>
-            <Typography variant="h3" ml={4} mb={2}>
+        <Grid container mt={6} spacing={{ xs: 6, sm: 4 }}>
+          <Grid size={{ xs: 12, sm: 3, md: 2 }}>
+            <Typography
+              variant="h3"
+              ml={4}
+              mb={2}
+              sx={{ textAlign: { xs: "center", sm: "left" } }}
+            >
               Latam
             </Typography>
-            <List>
+            <List
+              sx={{
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
               {regions.LATAM.countries.map((item) => (
                 <Fragment key={item.name}>
                   <ListItemComp country={item.name} FlagIcon={<item.code />} />
@@ -116,11 +129,21 @@ const SecondSection = () => {
               ))}
             </List>
           </Grid>
-          <Grid size={{ xs: 6, md: 2 }}>
-            <Typography variant="h3" ml={4} mb={2}>
+          <Grid size={{ xs: 12, sm: 3, md: 2 }}>
+            <Typography
+              variant="h3"
+              ml={4}
+              mb={2}
+              sx={{ textAlign: { xs: "center", sm: "left" } }}
+            >
               Sea
             </Typography>
-            <List>
+            <List
+              sx={{
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
               {regions.SEA.countries.map((item) => (
                 <Fragment key={item.name}>
                   <ListItemComp country={item.name} FlagIcon={<item.code />} />
@@ -128,12 +151,22 @@ const SecondSection = () => {
               ))}
             </List>
           </Grid>
-          <Grid size={{ xs: 6, md: 2 }}>
-            <Typography variant="h3" ml={4} mb={2}>
+          <Grid size={{ xs: 12, sm: 3, md: 2 }}>
+            <Typography
+              variant="h3"
+              ml={4}
+              mb={2}
+              sx={{ textAlign: { xs: "center", sm: "left" } }}
+            >
               Africa
             </Typography>
 
-            <List>
+            <List
+              sx={{
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
               {regions.Africa.countries.map((item) => (
                 <Fragment key={item.name}>
                   <ListItemComp country={item.name} FlagIcon={<item.code />} />
@@ -141,12 +174,22 @@ const SecondSection = () => {
               ))}
             </List>
           </Grid>
-          <Grid size={{ xs: 6, md: 2 }}>
-            <Typography variant="h3" ml={4} mb={2}>
+          <Grid size={{ xs: 12, sm: 3, md: 2 }}>
+            <Typography
+              variant="h3"
+              ml={4}
+              mb={2}
+              sx={{ textAlign: { xs: "center", sm: "left" } }}
+            >
               Middle East
             </Typography>
 
-            <List>
+            <List
+              sx={{
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
               {regions.MiddleEast.countries.map((item) => (
                 <Fragment key={item.name}>
                   <ListItemComp country={item.name} FlagIcon={<item.code />} />
@@ -154,12 +197,22 @@ const SecondSection = () => {
               ))}
             </List>
           </Grid>
-          <Grid size={{ xs: 6, md: 2 }}>
-            <Typography variant="h3" ml={4} mb={2}>
+          <Grid size={{ xs: 12, sm: 3, md: 2 }}>
+            <Typography
+              variant="h3"
+              ml={4}
+              mb={2}
+              sx={{ textAlign: { xs: "center", sm: "left" } }}
+            >
               Europe
             </Typography>
 
-            <List>
+            <List
+              sx={{
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
               {regions.Europe.countries.map((item) => (
                 <Fragment key={item.name}>
                   <ListItemComp country={item.name} FlagIcon={<item.code />} />
@@ -167,12 +220,22 @@ const SecondSection = () => {
               ))}
             </List>
           </Grid>
-          <Grid size={{ xs: 6, md: 2 }}>
-            <Typography variant="h3" ml={4} mb={2}>
+          <Grid size={{ xs: 12, sm: 3, md: 2 }}>
+            <Typography
+              variant="h3"
+              ml={4}
+              mb={2}
+              sx={{ textAlign: { xs: "center", sm: "left" } }}
+            >
               CIS
             </Typography>
 
-            <List>
+            <List
+              sx={{
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
               {regions.CIS.countries.map((item) => (
                 <Fragment key={item.name}>
                   <ListItemComp country={item.name} FlagIcon={<item.code />} />

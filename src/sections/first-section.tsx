@@ -29,15 +29,28 @@ const FirstSection = () => {
         //   border={"4px solid violet "}
       >
         <Grid
-          size={{ xs: 6, md: 6 }}
-          //   border={"1px solid orange"}
-          p={"0 4rem"}
+          size={{ xs: 12, md: 6 }}
+          // border={"1px solid orange"}
+          p={{ xs: "0 2rem", sm: "0 4rem" }}
           display="flex"
           justifyContent="center"
           alignItems="center"
         >
-          <Stack direction="column" gap={4}>
-            <Typography variant="h1">
+          <Stack
+            direction="column"
+            gap={4}
+            alignItems={{ xs: "center", sm: "center", md: "start" }}
+          >
+            <Typography
+              variant="h1"
+              // border="1px solid red"
+              sx={{
+                textAlign: {
+                  xs: "center", // Center alignment on extra-small screens
+                  sm: "left", // Left alignment on small screens and above
+                },
+              }}
+            >
               Welcome to A RegPharm Consultancy
             </Typography>
 
@@ -49,11 +62,15 @@ const FirstSection = () => {
 
             <Stack
               // border={"1px solid red"}
-              direction="row"
+              direction={{ xs: "column", sm: "column", md: "row" }}
               gap={4}
             >
-              <Button variant="contained" onClick={handleGetStarted}>
-                Get Started Now
+              <Button
+                variant="contained"
+                onClick={handleGetStarted}
+                sx={{ width: { xs: "90%", sm: "unset" } }}
+              >
+                Contact Us
               </Button>
               <Stack direction={"column"}>
                 <Typography>Call us +91-9915913112</Typography>
@@ -66,8 +83,8 @@ const FirstSection = () => {
         </Grid>
         <Grid
           size={{ xs: 6, md: 6 }}
-          //   border={"1px solid blue"}
-          display="flex"
+          // border={"1px solid blue"}
+          display={{ xs: "none", sm: "none", md: "flex" }}
           justifyContent="center"
           alignItems="center"
           position="relative"
@@ -82,7 +99,7 @@ const FirstSection = () => {
             borderRadius={"10px"}
             bgcolor={theme.palette.primary.dark}
             color={"white"}
-            display="flex"
+            display={{ xs: "none", sm: "none", md: "none", lg: "flex" }}
             justifyContent="center"
             flexDirection="column"
             gap={2}

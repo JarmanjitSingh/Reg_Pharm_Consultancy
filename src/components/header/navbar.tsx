@@ -6,24 +6,22 @@ import { useEffect, useState } from "react";
 import ContactForm from "../contact/contact";
 import ModalComp from "../contact/modal";
 import logo from "/public/regLogo.jpeg";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollPosition, setLastScrollPosition] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const router = useRouter();
 
   const handleOpen = () => {
     // setIsModalOpen(true);
-    window.location.href = "mailto:info@regpharmconsultancy.com";
+    // window.location.href = "mailto:info@regpharmconsultancy.com";
+    router.push("/about");
   };
   const handleClose = () => {
     setIsModalOpen(false);
   };
-
-  useEffect(() => {
-    setIsSmallScreen(window.innerWidth < 768);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,9 +48,6 @@ const Navbar = () => {
     };
   }, [lastScrollPosition]);
 
-  if (isSmallScreen) {
-    return <></>;
-  }
   return (
     <Box
       sx={{
@@ -77,22 +72,24 @@ const Navbar = () => {
           // border={"2px solid red"}
         >
           <Link href="/">
-            <Image src={logo} alt="Reg Pharm Logo" height={90} width={250} />
+            <Image src={logo} alt="Reg Pharm Logo" height={90} width={200} />
           </Link>
 
-          <Stack direction={"row"} gap={4}>
+          <Stack
+            direction={"row"}
+            gap={4}
+            display={{ xs: "none", sm: "none", md: "flex" }}
+          >
             <Link href={"/"}>Home</Link>
-            <Link href={"#experiences"}>Experience</Link>
-            <Link href={"#services"}>Services</Link>
-            <Link href={"/about"}>About Us</Link>
-            <Link href={"#"}>Contact Us</Link>
+            <Link href={"/#experiences"}>Experience</Link>
+            <Link href={"/#services"}>Services</Link>
+            <Link href={"mailto:info@regpharmconsultancy.com"}>Contact Us</Link>
+            {/* <Link href={"#"}>Contact Us</Link> */}
           </Stack>
 
-          <Stack direction={"row"} gap={1}>
-            <Button variant="contained" onClick={handleOpen}>
-              Get in Touch
-            </Button>
-          </Stack>
+          <Button variant="contained" onClick={handleOpen}>
+            About Us
+          </Button>
         </Stack>
       </Container>
 

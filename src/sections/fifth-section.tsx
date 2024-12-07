@@ -82,9 +82,9 @@ const chooseUs = {
 
 const FifthSection = () => {
   return (
-    <Container maxWidth="xl" sx={{ padding: "4rem 0" }}>
+    <Container maxWidth="xl" sx={{ padding: {xs: "4rem 2rem", sm: "4rem 0"} }}>
       <Stack direction="column" alignContent="center" alignItems="center">
-        <Typography variant="h1">
+        <Typography variant="h1" align="center">
           Why Choose A Regpharm Consultancy?
           {/* <FaGlobe size={30} color={theme.palette.primary.dark} /> */}
         </Typography>
@@ -100,9 +100,9 @@ const FifthSection = () => {
         {chooseUs.sellingPoints.map((item, index) => {
           return (
             <Grid
-              size={{ xs: 2, md: 4 }}
+              size={{ xs: 12, sm: 4, md: 4 }}
               //   border={"1px solid red"}
-              display="flex"
+              display={{ xs: "grid", sm: "grid", md: "flex" }}
               spacing={4}
               gap={4}
               p={2}

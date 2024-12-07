@@ -127,6 +127,9 @@ const theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
+        body: {
+          scrollBehavior: "smooth",
+        },
         a: {
           textDecoration: "none", // Removing text decoration for all links
           color: "gray", // Ensure link color inherits from the parent

@@ -4,7 +4,7 @@ import {
   Container,
   Grid2 as Grid,
   Stack,
-  Typography
+  Typography,
 } from "@mui/material";
 import Image from "next/image";
 import { TbBulbFilled } from "react-icons/tb";
@@ -18,9 +18,9 @@ const FourthSection = () => {
       <Container maxWidth="xl" sx={{ padding: "4rem 0" }}>
         <Grid container spacing={2}>
           <Grid
-            size={{ xs: 6, md: 6 }}
+            size={{ xs: 12, sm: 12, md: 6 }}
             // border={"1px solid orange"}
-            p={"0 4rem"}
+            p={{xs: "0 2rem", sm: "0 4rem"}}
           >
             <Stack direction="column" alignContent="center" alignItems="center">
               <Typography variant="h1" mb={2}>
@@ -84,7 +84,7 @@ const FourthSection = () => {
           <Grid
             size={{ xs: 6, md: 6 }}
             // border={"1px solid blue"}
-            display="flex"
+            display={{ xs: "none", sm: "none", md: "flex" }}
             justifyContent="center"
             alignItems="center"
             position="relative"
@@ -100,9 +100,10 @@ const FourthSection = () => {
                 // border="4px solid pink"
                 width="50%"
                 justifyContent={"space-between"}
+                display={{ md: "none", lg: "flex" }}
               >
                 <Box
-                  // border={"4px solid pink"}
+                  border={"4px solid pink"}
                   height={"22rem"}
                   width={"90%"}
                   borderRadius="10px"
@@ -137,7 +138,7 @@ const FourthSection = () => {
               <Box
                 // border={"4px solid pink"}
                 height={"100%"}
-                width={"50%"}
+                width={{ md: "100%", lg: "50%" }}
                 borderRadius="10px"
                 overflow="hidden"
                 position={"relative"}

@@ -15,12 +15,16 @@ const SixthSection = () => {
   };
   return (
     <Box bgcolor={theme.palette.primary.dark}>
-      <Container maxWidth="xl" sx={{ padding: "6rem 0" }}>
+      <Container
+        maxWidth="xl"
+        sx={{ padding: { xs: "6rem 0rem", sm: "6rem 0" } }}
+      >
         <Stack
-          direction="row"
+          direction={{ xs: "column", sm: "row" }}
           justifyContent="space-between"
           alignItems="center"
-          p="0 2rem"
+          p={{ xs: "0", sm: "0 2rem" }}
+          gap={{ xs: 4 }}
         >
           <Stack direction="column" width="70%">
             <Typography variant="h1" color="white" mb={2}>
@@ -40,6 +44,7 @@ const SixthSection = () => {
             sx={{
               background: "white",
               height: "fit-content",
+              width: { xs: "60%", sm: "unset" },
               color: theme.palette.primary.dark,
               "&:hover": {
                 background: theme.palette.primary.dark,

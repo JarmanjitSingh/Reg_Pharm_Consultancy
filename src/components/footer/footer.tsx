@@ -20,24 +20,17 @@ import {
 import { ImFacebook2 } from "react-icons/im";
 import { IoMail } from "react-icons/io5";
 import logo from "/public/regLogo.jpeg";
-import { useEffect, useState } from "react";
 
 const Footer = () => {
   const theme = useTheme();
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    setIsSmallScreen(window.innerWidth < 768);
-  }, []);
-  if (isSmallScreen) {
-    return <></>;
-  }
   return (
     <Box sx={{ boxShadow: "0 2px 2px 2px rgba(0,0,0,.2)" }}>
       <Container maxWidth={"xl"}>
-        <Stack direction={"row"}>
+        <Stack
+          direction={{ xs: "column-reverse", sm: "column-reverse", md: "row" }}
+        >
           <Stack
-            width={"30%"}
+            width={{ xs: "100%", sm: "100%", md: "30%" }}
             p={"2rem"}
             alignItems={"center"}
             justifyContent={"center"}
@@ -85,14 +78,19 @@ const Footer = () => {
             </Stack>
           </Stack>
           <Stack
-            width={"70%"}
+            width={{ xs: "100%", sm: "100%", md: "70%" }}
             p={"2rem"}
-            alignItems={"center"}
+            alignItems={{ xs: "top", sm: "top", md: "center" }}
             justifyContent={"center"}
             gap={2}
-            direction={"row"}
+            direction={{ xs: "column", sm: "row" }}
+            // border="1px solid red"
           >
-            <Stack width={"30%"} height={"100%"} gap={"2rem"}>
+            <Stack
+              width={{ xs: "100%", sm: "30%" }}
+              height={"100%"}
+              gap={"2rem"}
+            >
               <Typography variant="h1" fontSize="2rem">
                 Quick Links
               </Typography>
@@ -105,7 +103,11 @@ const Footer = () => {
                 <Link href={"#"}>Contact Us</Link>
               </Stack>
             </Stack>
-            <Stack width={"30%"} height={"100%"} gap={"2rem"}>
+            <Stack
+              width={{ xs: "100%", sm: "30%" }}
+              height={"100%"}
+              gap={"2rem"}
+            >
               <Typography variant="h1" fontSize="2rem">
                 Services
               </Typography>
@@ -120,7 +122,7 @@ const Footer = () => {
               </Stack>
             </Stack>
             <Stack
-              width={"30%"}
+              width={{ xs: "100%", sm: "30%" }}
               height={"100%"}
               gap={"2rem"}
               alignItems={"start"}
@@ -155,10 +157,11 @@ const Footer = () => {
 
         <Stack
           p={"2rem 0"}
-          direction={"row"}
-          justifyContent={"space-evenly"}
+          direction={{ xs: "column", sm: "row" }}
+          justifyContent={{ xs: "center", sm: "space-evenly" }}
+          alignItems={{ xs: "center", sm: "unset" }}
           color={"gray"}
-          gap={4}
+          gap={{xs: 2, sm: 4}}
           borderTop="2px solid #eeeeee"
         >
           <Typography>Terms of Use | Privacy Policy</Typography>
