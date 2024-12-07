@@ -69,7 +69,6 @@ const Navbar = () => {
           alignItems={"center"}
           justifyContent={"space-between"}
           gap={6}
-          // border={"2px solid red"}
         >
           <Link href="/">
             <Image src={logo} alt="Reg Pharm Logo" height={90} width={200} />
@@ -84,7 +83,6 @@ const Navbar = () => {
             <Link href={"/#experiences"}>Experience</Link>
             <Link href={"/#services"}>Services</Link>
             <Link href={"mailto:info@regpharmconsultancy.com"}>Contact Us</Link>
-            {/* <Link href={"#"}>Contact Us</Link> */}
           </Stack>
 
           <Button variant="contained" onClick={handleOpen}>

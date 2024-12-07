@@ -19,8 +19,7 @@ const FourthSection = () => {
         <Grid container spacing={2}>
           <Grid
             size={{ xs: 12, sm: 12, md: 6 }}
-            // border={"1px solid orange"}
-            p={{xs: "0 2rem", sm: "0 4rem"}}
+            p={{ xs: "0 2rem", sm: "0 4rem" }}
           >
             <Stack direction="column" alignContent="center" alignItems="center">
               <Typography variant="h1" mb={2}>
@@ -83,27 +82,19 @@ const FourthSection = () => {
           </Grid>
           <Grid
             size={{ xs: 6, md: 6 }}
-            // border={"1px solid blue"}
             display={{ xs: "none", sm: "none", md: "flex" }}
             justifyContent="center"
             alignItems="center"
             position="relative"
           >
-            <Stack
-              direction={"row"}
-              // border="4px solid red"
-              width="100%"
-              height="100%"
-            >
+            <Stack direction={"row"} width="100%" height="100%">
               <Stack
                 direction={"column"}
-                // border="4px solid pink"
                 width="50%"
                 justifyContent={"space-between"}
                 display={{ md: "none", lg: "flex" }}
               >
                 <Box
-                  border={"4px solid pink"}
                   height={"22rem"}
                   width={"90%"}
                   borderRadius="10px"
@@ -119,7 +110,6 @@ const FourthSection = () => {
                 </Box>
 
                 <Box
-                  // border={"4px solid pink"}
                   height={"22rem"}
                   width={"90%"}
                   borderRadius="10px"
@@ -136,7 +126,6 @@ const FourthSection = () => {
               </Stack>
 
               <Box
-                // border={"4px solid pink"}
                 height={"100%"}
                 width={{ md: "100%", lg: "50%" }}
                 borderRadius="10px"

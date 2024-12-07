@@ -82,11 +82,13 @@ const chooseUs = {
 
 const FifthSection = () => {
   return (
-    <Container maxWidth="xl" sx={{ padding: {xs: "4rem 2rem", sm: "4rem 0"} }}>
+    <Container
+      maxWidth="xl"
+      sx={{ padding: { xs: "4rem 2rem", sm: "4rem 2rem" } }}
+    >
       <Stack direction="column" alignContent="center" alignItems="center">
         <Typography variant="h1" align="center">
           Why Choose A Regpharm Consultancy?
-          {/* <FaGlobe size={30} color={theme.palette.primary.dark} /> */}
         </Typography>
         <Typography width="70%" align="center">
           At A Regpharm Consultancy, we pride ourselves on being a trusted
@@ -101,7 +103,6 @@ const FifthSection = () => {
           return (
             <Grid
               size={{ xs: 12, sm: 4, md: 4 }}
-              //   border={"1px solid red"}
               display={{ xs: "grid", sm: "grid", md: "flex" }}
               spacing={4}
               gap={4}

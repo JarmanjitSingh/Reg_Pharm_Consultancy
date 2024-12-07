@@ -15,10 +15,7 @@ const SixthSection = () => {
   };
   return (
     <Box bgcolor={theme.palette.primary.dark}>
-      <Container
-        maxWidth="xl"
-        sx={{ padding: { xs: "6rem 0rem", sm: "6rem 0" } }}
-      >
+      <Container maxWidth="xl" sx={{ padding: "6rem 0" }}>
         <Stack
           direction={{ xs: "column", sm: "row" }}
           justifyContent="space-between"

@@ -23,14 +23,9 @@ const FirstSection = () => {
       maxWidth="xl"
       sx={{ padding: "2rem 0", mt: "6rem" }}
     >
-      <Grid
-        container
-        spacing={2}
-        //   border={"4px solid violet "}
-      >
+      <Grid container spacing={2}>
         <Grid
           size={{ xs: 12, md: 6 }}
-          // border={"1px solid orange"}
           p={{ xs: "0 2rem", sm: "0 4rem" }}
           display="flex"
           justifyContent="center"
@@ -43,11 +38,10 @@ const FirstSection = () => {
           >
             <Typography
               variant="h1"
-              // border="1px solid red"
               sx={{
                 textAlign: {
-                  xs: "center", // Center alignment on extra-small screens
-                  sm: "left", // Left alignment on small screens and above
+                  xs: "center",
+                  sm: "left",
                 },
               }}
             >
@@ -55,13 +49,12 @@ const FirstSection = () => {
             </Typography>
 
             <Typography>
-              We are a regulatory consultancy based in Chandigarh with over 10
-              years of experience in the pharmaceutical market. Our expertise
+              We are a regulatory consultancy based in Chandigarh with more than
+              10 years of experience in the pharmaceutical market. Our expertise
               spans EU-GMP, PICS, ANVISA, and COFEPRIS manufacturing facilities.
             </Typography>
 
             <Stack
-              // border={"1px solid red"}
               direction={{ xs: "column", sm: "column", md: "row" }}
               gap={4}
             >
@@ -83,7 +76,6 @@ const FirstSection = () => {
         </Grid>
         <Grid
           size={{ xs: 6, md: 6 }}
-          // border={"1px solid blue"}
           display={{ xs: "none", sm: "none", md: "flex" }}
           justifyContent="center"
           alignItems="center"
@@ -91,7 +83,6 @@ const FirstSection = () => {
         >
           <Box
             position="absolute"
-            // border={"1px solid red"}
             zIndex={1}
             height={"10rem"}
             width={"20rem"}
@@ -118,7 +109,6 @@ const FirstSection = () => {
             </Typography>
           </Box>
           <Box
-            // border={"4px solid pink"}
             height={"35rem"}
             width={"90%"}
             borderRadius="10px"

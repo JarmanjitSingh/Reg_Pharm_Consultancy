@@ -161,12 +161,12 @@ const Footer = () => {
           justifyContent={{ xs: "center", sm: "space-evenly" }}
           alignItems={{ xs: "center", sm: "unset" }}
           color={"gray"}
-          gap={{xs: 2, sm: 4}}
+          gap={{ xs: 2, sm: 4 }}
           borderTop="2px solid #eeeeee"
         >
           <Typography>Terms of Use | Privacy Policy</Typography>
           <Divider orientation="vertical" flexItem />
-          <Typography>
+          <Typography align="center">
             © Copyright 2024 RegPharm. All Rights Reserved.
           </Typography>
         </Stack>

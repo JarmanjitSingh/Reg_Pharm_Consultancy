@@ -102,12 +102,13 @@ const services = [
 const ThirdSection = () => {
   const theme = useTheme();
   return (
-    <Container id="services" maxWidth="xl" sx={{ padding: {xs: "4rem 2rem", sm: "4rem 0"} }}>
+    <Container
+      id="services"
+      maxWidth="xl"
+      sx={{ padding: { xs: "4rem 2rem", sm: "4rem 2rem" } }}
+    >
       <Stack direction="column" alignContent="center" alignItems="center">
-        <Typography variant="h1">
-          Our Services
-          {/* <FaGlobe size={30} color={theme.palette.primary.dark} /> */}
-        </Typography>
+        <Typography variant="h1">Our Services</Typography>
         <Typography>
           Services including dossier compilation, preparation of QC documents,
           process validation reports, method development, BA-BE studies, and
