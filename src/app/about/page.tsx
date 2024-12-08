@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import yogita from "/public/yogitaa2.jpeg";
+import yogita from "/public/yogita3.jpeg";
 
 const AboutPage = () => {
   return (
@@ -52,7 +52,7 @@ const AboutPage = () => {
           <Stack
             // border="4px solid violet"
             width="70%"
-            height="30rem"
+            height={{ xs: "27rem", sm: "27rem", md: "27rem", lg: "30rem" }}
             borderRadius="10px"
             margin="auto"
             boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
@@ -107,7 +107,7 @@ const AboutPage = () => {
         </Stack>
       </Stack>
 
-      <Grid container mt={8} spacing={{xs: 4, sm: 12}}>
+      <Grid container mt={8} spacing={{ xs: 4, sm: 12 }}>
         <Grid
           size={{ xs: 12, sm: 6, md: 3 }}
           display="flex"
