@@ -135,9 +135,7 @@ const Footer = () => {
                 <Stack direction={"row"} gap={1}>
                   <FaLocationDot size={30} />
                   <Typography>
-                    # 166, Kumauda Ward-6, PITHORGARH-262501 (Uttarakhand){" "}
-                    <br />
-                    Proprietor: Yogita Upadhyay
+                    # 166, Kumauda Ward-6, PITHORGARH-262501 (Uttarakhand)
                   </Typography>
                 </Stack>
 

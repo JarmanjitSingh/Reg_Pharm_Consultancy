@@ -74,7 +74,7 @@ const services = [
       "Biowaiver Reports",
       "Toxicological Studies",
       "Pharmacovigilance Study",
-      "Product Safety Update Reports",
+      "Safety Update Reports",
       "Risk Minimization Plan",
     ],
   },

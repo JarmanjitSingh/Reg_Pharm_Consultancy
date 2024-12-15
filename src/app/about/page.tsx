@@ -30,7 +30,7 @@ const AboutPage = () => {
           </Typography>
 
           <Typography>
-            <strong>Ms. Yogyataa </strong>
+            <strong>Ms. Yogita </strong>
             is the founder of <strong>RegPharm Consultancy</strong> having More
             than 11 years’ Experience of Regulatory Affairs. She have been
             worked in various Pharmaceutical Companies as a Regulatory Head ,

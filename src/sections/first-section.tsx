@@ -45,7 +45,7 @@ const FirstSection = () => {
                 },
               }}
             >
-              Welcome to A RegPharm Consultancy
+              Welcome to RegPharm Consultancy
             </Typography>
 
             <Typography>
